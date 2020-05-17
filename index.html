@@ -13,11 +13,27 @@
 <body>
     <!-- WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast -->
-</body>
-
-<div class="jumbotron">
-    <h1 class="display-4 text-center">The Weather Dashboard!</h1>
-</div>
-
-<div class="container">
-    <!-- row one column one goes here-->
+ <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container content ">
+        <div class="row">
+            <div class="col-12 col-md-4 cities">
+                <label for="citySearch">
+                    <h4> Search for a City:</h4>
+                </label>
+                <input type="text" id="citySearch" placeholder="city"><button id="cityAddButton">Add</button>
+                <button id="clearCities">Clear</button>
+                <ul id="cityList"></ul>
+            </div>
+            <div class="col-12 col-md-8 results">
+                <div class="row">
+                    <div id="currentWeather">
+                        <h2 id="cityDate">Search A City</h2>
+                        <div id="currentWeather">
+                            <h2 id="cityDate">Search A City</h2>
+                            <p class="currentWeatherText">Temperature: <span id="tempSpan"></span></p>
+                            <p class="currentWeatherText">Humidity: <span id="humiditySpan"></span></p>
+                            <p class="currentWeatherText">Wind Speed: <span id="windSpan"></span></p>
+                            <p class="currentWeatherText">UV Index: <span id="uvSpan"></span></p>
+                        </div>
+                    </div>
